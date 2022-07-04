@@ -1,0 +1,115 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.5) 50%);
+    z-index: 100;
+    transition: all 0.3s ease-in;
+
+    &.bgc {
+        background-color: #000;
+    }
+
+    .nav-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+            width: 120px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .nav-search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-input {
+            padding: 8px;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            background-color: transparent;
+
+            .search-input::placeholder {
+                color: #fff;
+            }
+        }
+
+        button {
+            background: transparent;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            .search-icon {
+                font-size: 2.5rem;
+            }
+        }
+
+        .arrow-icon,
+        .bell-icon {
+            font-size: 2.4rem;
+            cursor: pointer;
+            line-height: 1.6;
+        }
+
+        .nav-user {
+            width: 30px;
+            height: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-left: 16px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .setting {
+            background-color: #000;
+            color: #fff;
+            width: 100px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 0;
+                font-size: 1.6rem;
+                padding: 5px;
+                font-weight: 500;
+                transition: 0.4s ease;
+
+                span {
+                    margin-left: 6px;
+                }
+
+                &.bb {
+                    border-bottom: 1px solid #ccc;
+                }
+
+                &:hover {
+                    color: #999;
+                }
+            }
+        }
+    }
+}
