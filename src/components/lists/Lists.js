@@ -1,14 +1,9 @@
-import classNames from 'classnames/bind';
-
-import styles from './Lists.module.scss';
 import ListItem from '../listItem/ListItem';
 import { getDatas } from '../../utils/fetchApi';
 
-const cx = classNames.bind(styles);
-
 const moviesList = [
     {
-        title: 'Top Netflix Movies',
+        title: 'TOP NETFLIX MOVIES',
         getData: getDatas.fetchNetflixOriginals,
         isMaxWidth: true,
     },
@@ -44,7 +39,7 @@ const moviesList = [
 
 const Lists = () => {
     return (
-        <div className={cx('lists')}>
+        <div style={{ marginLeft: '50px', marginTop: '50px' }}>
             {moviesList.map((movie, index) => (
                 <ListItem key={index} title={movie.title} getData={movie.getData} isMaxWidth={movie.isMaxWidth} />
             ))}

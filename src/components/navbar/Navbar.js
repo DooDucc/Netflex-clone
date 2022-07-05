@@ -51,22 +51,22 @@ const Navbar = () => {
                     placement="bottom-end"
                     render={(attrs) => (
                         <div className={cx('setting')} tabIndex="-1" {...attrs}>
-                            <p className={cx('bb')}>
+                            <a href="/" className={cx('bb')}>
                                 <AssignmentInd />
                                 <span>Profile</span>
-                            </p>
-                            <p>
+                            </a>
+                            <a href="/">
                                 <Person />
                                 <span>Account</span>
-                            </p>
-                            <p className={cx('bb')}>
+                            </a>
+                            <a href="/" className={cx('bb')}>
                                 <HelpOutline />
                                 <span>FAQ?</span>
-                            </p>
-                            <p>
+                            </a>
+                            <a href="/">
                                 <Logout />
                                 <span>Log out</span>
-                            </p>
+                            </a>
                         </div>
                     )}
                 >

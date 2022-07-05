@@ -83,15 +83,15 @@
 
         .setting {
             background-color: #000;
-            color: #fff;
             width: 100px;
             border-radius: 10px;
             cursor: pointer;
 
-            p {
+            a {
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
+                color: #fff;
                 margin: 0;
                 font-size: 1.6rem;
                 padding: 5px;

@@ -8,13 +8,16 @@
     .arrow-slide {
         position: absolute;
         top: 50%;
-        transform: translate(-50%, -30%);
-        width: 50px;
-        height: 100px;
+        transform: translate(-50%, -25%);
+        width: 70px;
+        height: 70px;
+        padding: 10px;
         font-size: 1rem;
+        border-radius: 50%;
         color: #fff;
         z-index: 99;
         cursor: pointer;
+        transition: 0.3s ease;
 
         &.left {
             left: -16px;
@@ -22,6 +25,10 @@
 
         &.right {
             right: 0;
+        }
+
+        &:hover {
+            background-color: rgba(22, 22, 22, 0.5);
         }
     }
 
